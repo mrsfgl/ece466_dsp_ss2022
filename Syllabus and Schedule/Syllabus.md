@@ -1,13 +1,17 @@
 # ECE 466: Digital Signal Processing, Spring 2022
 *Course Website: [d2l.msu.edu/d2l/home/1382712](https://d2l.msu.edu/d2l/home/1382712)*
+- [ECE 466: Digital Signal Processing, Spring 2022](#ece-466-digital-signal-processing-spring-2022)
+- [Course Description and Policies](#course-description-and-policies)
+  - [What You Will Learn:](#what-you-will-learn)
+- [Requirements:](#requirements)
+- [Schedule](#schedule)
 
 ---
-
-__Instructor:__ Emre Sofuoglu, sofuoglu@msu.edu. You can reach me from D2L e-mail.
+__Instructor:__ Seyyid Emre Sofuoglu, sofuoglu@msu.edu. You can reach me from D2L e-mail.
 
 __Lecture Hours:__ TTh 10:20-11:40 am, Wilson Hall C1
 
-__Office Hours:__ TBD.
+__Office Hours:__ TTh 4-5 pm, online. See D2L calendar or announcements for Zoom link.
 
 __Textbook:__ J.R. Deller, Jr., Discrete-Time Signal Processing with Speech Processing Motivations, Vol. 1: Deterministic Signals, &copy; Author, 2016. Posted on class web site
 
@@ -24,10 +28,21 @@ Course Description and Policies
 =
 
 This course introduces fundamental tools for extracting information 
-embedded in digital signals. While most real world signals are inherently analog, digital signal processing is often performed (after analog-to-digital conversion) due to the cost effectiveness, reliability, and re-configurability of digital hardware and software. Digital Signal Processing (DSP) techniques will specifically be presented in both the time-domain and frequency-domain to analyze signals and linear and time-invariant (LTI) systems, and determine the output response of such systems to input signals. To supplement this theory, practical experience in analyzing and processing digital signals will be provided through a computer project based on Python. Digital signal processing is needed in virtually all aspects of science and engineering. Applications of digital signal processing include the study of physiologic systems and financial markets as well as the design of control and communication systems.
+embedded in digital signals. Digital signal processing is performed (after analog-to-digital conversion) due to the cost effectiveness, reliability, and re-configurability of digital hardware and software. Digital Signal Processing (DSP) techniques will specifically be presented in both the time-domain and frequency-domain to analyze signals and systems. To supplement this theory, practical experience in analyzing and processing digital signals will be provided through a computer project based on Python. Digital signal processing is heavily utilized in virtually all aspects of science and engineering. Applications of digital signal processing include machine learning, the study of biological, chemical, social (__Pandemic tracking and prediction__), and physical systems (_even a building is a system_), financial markets, the design of control and communication systems, ...
 
-__Requirements:__ There will be two midterms, homeworks, quizzes, and a final project.
-1. __Midterm 1:__ 
+## What You Will Learn:
+1. Relationships between Digital and Analog Systems. Why use digital?
+2. Time domain and frequency domain analysis of digital systems. How to better understand, analyze and model digital systems?
+3. Tools and skillset for digital signal processing. Operators that correspond to their counterparts of analog signal processing, such as Fourier transform, convolution, ...
+4. Theoretical analysis of these tools using $z$-transfom. How does all these work in math?
+5. Machine Learning for SP. 
+
+Requirements: 
+==
+There will be two midterms, homeworks, quizzes, and a final project.
+1. __Midterm 1:__ February 17th, Thursday, Class time.
+2. __Midterm 2:__ April 5th, Tuesday, Class time.
+3. __Final Project:__ (TBD)
 
 ---
 Schedule
@@ -36,19 +51,19 @@ Schedule
 | Week | Subjects | Textbook Reference | Notes|
 |-|-|-|-|
 | 1.10 |  Introduction, Basic Signals & Systems Concepts: Analog vs Digital Signals | Deller, Chapters 0:1, 1:1; P&M, Chapter 1.1, 1.2 |
-| 1.17 |  Discrete Time Signal & Systems Concepts: Power, Energy, Classification of Systems.  |  Deller, Chapters 1:1, 5:1-2; P&M, Chapter 1.3-4, 2.1-2 |
-| 1.24 |  Time-domain Analysis: Convolution Sum, Difference Equations |  Deller, 5:3; P&M, Chapter 2.3-4|
-| 1.31 |  LCCDEs, $z$-Transform (ZT): Definition, Existence, ROC.  | Deller, 5:3, 4:1, 4:2; P&M, Chapter 2.4, 3.1 |
-| 2.7 |  ZT (continued):  Properties, Rational ZT, Pole-Zero Analysis. | Deller, 4:4.2-3; P&M, 3.2-4  |
-| 2.14 |  ZT (continued): Inverse ZT, ZT analysis of LTI Systems. | Deller, 4:6, 5:5; P&M, 3.6 |
-| 2.21 |  Frequency Analysis: Discrete Time Fourier Series (DTFS), DTF Transform (DTFT): Definition, Convergence, Spectra, Parseval's Theorem | Deller,  2:1-2, 2:3.1-2, 2:3.5; P&M, 4.2 |
-| 2.28 | DTFT (continued): Relationship Between $z$-Transform (and CTFT) and DTFT, Frequency Response of LTI Systems |  Deller, 4:3, 5:4.1-2; P&M, 4.3-4 |
-| 3.7 |  __SPRING BREAK__ |  |
-| 3.14 |   DTFT (continued): Frequency Response of LTI Systems, Relationship Between System Function and Freq. Resp., Ideal Filters |  Deller, 5:4.3; P&M, 4.4.2-3, 4.4.5 |
-| 3.21 |  b |  |
-| 3.28 |  b |  |
-| 4.4 |  b |  |
-| 4.11 |  b |  |
-| 4.18 |  b |  |
-| 4.25 |  b |  |
+| 1.17 |  Discrete Time Signal & Systems Concepts: Power, Energy, Classification of Systems.  |  Deller, Chapters 1:1, 5:1-2; P&M, Chapter 1.3-4, 2.1-2 | Hw 1 |
+| 1.24 |  Time-domain Analysis: Convolution Sum, Difference Equations |  Deller, 5:3; P&M, Chapter 2.3-4| HW1 due 25th |
+| 1.31 |  LCCDEs, $z$-Transform (ZT): Definition, Existence, ROC.  | Deller, 5:3, 4:1, 4:2; P&M, Chapter 2.4, 3.1 | HW 2 |
+| 2.7 |  ZT (continued):  Properties, Rational ZT, Pole-Zero Analysis. | Deller, 4:4.2-3; P&M, 3.2-4  |  HW 2 due 8th |
+| 2.14 |  ZT (continued): Inverse ZT, ZT analysis of LTI Systems. | Deller, 4:6, 5:5; P&M, 3.6 | __Midterm 1 at 2.17__ | 
+| 2.21 |  Frequency Analysis: Discrete Time Fourier Series (DTFS), DTF Transform (DTFT): Definition, Convergence, Spectra, Parseval's Theorem | Deller,  2:1-2, 2:3.1-2, 2:3.5; P&M, 4.2 | HW 3 |
+| 2.28 | DTFT (continued): Relationship Between $z$-Transform (and CTFT) and DTFT, Frequency Response of LTI Systems |  Deller, 4:3, 5:4.1-2; P&M, 4.3-4 |  HW3 due 4th |
+| 3.7 |  __SPRING BREAK__ | |
+| 3.14 |   DTFT (continued): Frequency Response of LTI Systems, Relationship Between System Function and Freq. Resp., Ideal Filters |  Deller, 5:4.3; P&M, 4.4.2-3, 4.4.5 |  HW4 |
+| 3.21 |  Discrete Fourier Transform (DFT): Definition, Properties, Applications | Deller, 2:5; P&M, 5.1-2 | HW4 due 24th |
+| 3.28 |  Applications of DFT: Block Filtering, Frequency Analysis. Fast FT (In-class coding) | Deller, 2:6; P&M 5.3-4 | HW5|
+| 4.4 | Machine Learning for Signal Processing: Supervised and Unsupervised Learning, Linear Algebra. | | __Midterm 2 on 4.5__, HW5 due 7th |
+| 4.11 |  MLSP: Linear Regression, Classifiers, Autocorrelation  |  |
+| 4.18 |  TBD |  |
+| 4.25 |  TBD |  |
 | 5.2 |  Final's Week |  |
