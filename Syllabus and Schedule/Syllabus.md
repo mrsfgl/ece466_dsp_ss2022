@@ -39,7 +39,7 @@ embedded in digital signals. Digital signal processing is performed (after analo
 
 Requirements: 
 ==
-There will be two midterms, homeworks, quizzes, and a final project.
+There will be two midterms (50%), homeworks (15%), quizzes (10%), and a final project (25%).
 1. __Midterm 1:__ February 17th, Thursday, Class time.
 2. __Midterm 2:__ April 5th, Tuesday, Class time.
 3. __Final Project:__ (TBD)

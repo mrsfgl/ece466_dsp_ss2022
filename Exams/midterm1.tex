@@ -1,0 +1,105 @@
+\documentclass{article}
+ 
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem,epsfig}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{float}
+
+\def\x{\mathbf{x}}
+\def\y{\mathbf{y}}
+\def\v{\mathbf{v}}
+\def\a{\mathbf{a}}
+\def\b{\mathbf{b}}
+\def\ttheta{(1-\theta)}
+\def\A{\mathbf{A}}
+\def\F{\mathbf{F}}
+\def\I{\mathbf{I}}
+\def\R{\mathbb{R}}
+\def\C{\mathcal{C}}
+\def\L{\mathcal{L}}
+
+ 
+\begin{document}
+ 
+\title{ECE 466 Midterm 1}
+\author{Name: \\PID: }
+ 
+\maketitle
+ 
+\begin{itemize}
+    \item Don't forget to write your name.
+    \item Open textbook.
+    \item Read carefully and write legibly. For the problems with partial credit, show your work.
+    \item For those of you who are remotely solving the exam: 
+    \begin{itemize}
+        \item You can solve your exam in A-4 sheets or on your tablet.
+        \item You need to send a scanned pdf or image until 11:45 AM, Tuesday 22nd, to sofuoglu@msu.edu. Otherwise, your exam will not be accepted.
+        \item Make sure your answers are legible from pdf or scanned image. 
+    \end{itemize}
+\end{itemize}
+
+\begin{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 1
+    \item  No partial points for the following.
+    \begin{enumerate}
+        \item {[15 Points]} Check if the following systems fits the classifications on the columns.
+         
+        
+        \begin{tabular}{l|c|c|c|c|c}
+            System Equation & Linear & Time Invariant & Static & Causal & Stable\\
+            \hline
+            $y[n] = x[-n]$ &&&&& \\
+            \hline
+            $y[n] = 2n^2x[n]+nx[n+1]$ &&&&&\\
+            \hline
+            $y[n] = cos(2\pi x[n])$ &&&&& \\
+        \end{tabular}
+
+        \vspace{1in}
+
+        \item {[5 Points]} The sequence $x[n] = \cos\left(\frac{\pi}{2}n\right)$ was obtained by sampling an analog signal $x(t) = \cos{(\Omega t)}$ at a sampling rate of $F_s=100$ Hz. What are two possible values of $\Omega$? 
+        \vspace{1in}
+        \item {[5 Points]} What is the ideal sampling frequency of $x(t)=u(t)$? 
+        \vspace{1in}
+        \item {[5 Points]} The causal sequence $x[n] = \{\underline{3}, 1\}$ is input to a system with impulse response $h[n]$, producing the zero-state response $y[n]=\{\underline{6}, -1, 2, 1\}$. Determine $h[n]$.
+        \vspace{2in}
+        \item The impulse response of a DT (Discrete Time)-LTI system is given by $h[n] = A (0.7)^nu[n]$. Suppose $x[n] = B \cos(0.2\pi n)u[n]$ is input to the system. Which of the following could be the output signal $y[n] = h[n]\ast x[n]$?
+        \begin{enumerate}
+            \item $K_1(0.7)^n \cos(0.2\pi n+\theta)u[n]$.
+            \item $K_1(0.14)^nu[n] + K_1\cos(0.14 \pi n\theta)u[n]$.
+            \item $K_1(0.7)^nu[n]+ K_2\cos(0.2\pi n +\theta)u[n]$.
+            \item $K_1(0.7)^nu[-n]+ K_2\cos(0.2\pi n +\theta)u[n]$.
+        \end{enumerate}
+    \end{enumerate}
+
+    \vspace{1in}
+    \item {[30 Points]} Consider a causal LTI system described by the difference equation $y[n] = \frac{2}{15}y[n-1]+\frac{1}{15}y[n-2]+x[n]$ with $y[-1] = 1$, $y[-2]=-1$.
+    \begin{enumerate}
+        \item {[6]} Find the impulse response $h[n]$.
+        \item {[4]} Determine if the system is (1) FIR or IIR, and (2) stable.
+        \item {[8]} Find the zero state response for $x[n] = u[n]$. ({\it Decide on particular response's $K$ first.})
+        \item {[8]} Find the zero input response.
+        \item {[4]} Find the total response for $x[n]=u[n]$. Identify the steady state and transient responses.
+    \end{enumerate}
+    \newpage
+    \textit{Extra page for Question 2}
+    \newpage
+    \item {[30 points]} A causal LTI system has a system function $H(z) = \frac{1+z^{-1}}{1-\frac{3}{5}z^{-1}+\frac{2}{25}z^{-2}}.$
+    \begin{enumerate}
+        \item {[5]} Determine the difference equation that this system function describes.
+        \item {[2]} What is the gain of the system?
+        \item {[5]} Plot the pole-zero map.
+        \item {[5]} Determine the region of convergence (ROC).
+        \item {[5]} Is the system stable? Why?
+        \item {[8]} Find the input signal $x[n]$ that will produce the output $y[n] = 2\left(\frac{2}{5}\right)^nu[n]-\left(\frac{1}{5}\right)^nu[n]$.
+    \end{enumerate}
+    
+    \newpage
+    \textit{Extra page for Question 3}
+\end{enumerate}
+
+\end{document}
