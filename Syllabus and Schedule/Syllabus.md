@@ -53,17 +53,17 @@ Schedule
 | 1.10 |  Introduction, Basic Signals & Systems Concepts: Analog vs Digital Signals | Deller, Chapters 0:1, 1:1; P&M, Chapter 1.1, 1.2 |
 | 1.17 |  Discrete Time Signal & Systems Concepts: Power, Energy, Classification of Systems.  |  Deller, Chapters 1:1, 5:1-2; P&M, Chapter 1.3-4, 2.1-2 | Hw 1 |
 | 1.24 |  Time-domain Analysis: Convolution Sum, Difference Equations |  Deller, 5:3; P&M, Chapter 2.3-4| HW1 due 27th, HW 2 |
-| 1.31 |  LCCDEs, $z$-Transform (ZT): Definition, Existence, ROC.  | Deller, 5:3, 4:1, 4:2; P&M, Chapter 2.4, 3.1 | HW 2 due 3rd, HW 3 |
-| 2.7 |  ZT (continued):  Properties, Rational ZT, Pole-Zero Analysis. | Deller, 4:4.2-3; P&M, 3.2-4  | HW 3 due 10th  |
-| 2.14 |  ZT (continued): Inverse ZT, ZT analysis of LTI Systems. | Deller, 4:6, 5:5; P&M, 3.6 | __Midterm 1 at 2.17__ | 
-| 2.21 |  Frequency Analysis: Discrete Time Fourier Series (DTFS), DTF Transform (DTFT): Definition, Convergence, Spectra, Parseval's Theorem | Deller,  2:1-2, 2:3.1-2, 2:3.5; P&M, 4.2 | HW 4 |
-| 2.28 | DTFT (continued): Relationship Between $z$-Transform (and CTFT) and DTFT, Frequency Response of LTI Systems |  Deller, 4:3, 5:4.1-2; P&M, 4.3-4 |  HW 4 due 3rd |
+| 1.31 |  LCCDEs, $z$-Transform (ZT): Definition, Existence, ROC.  | Deller, 5:3, 4:1, 4:2; P&M, Chapter 2.4, 3.1 | HW 2 due 3rd |
+| 2.7 |  ZT (continued):  Properties, Rational ZT, Pole-Zero Analysis. | Deller, 4:4.2-3; P&M, 3.2-4  | HW 3 |
+| 2.14 |  ZT (continued): Inverse ZT, ZT analysis of LTI Systems. | Deller, 4:6, 5:5; P&M, 3.6 | HW 3 due 17th | 
+| 2.21 | Midterm and Coding Session | | __Midterm 1 at 2.22__, HW 4 |
+| 2.28 | ZT (continued): Inverse ZT, ZT analysis of LTI Systems.  Frequency Analysis: Discrete Time Fourier Series (DTFS), DTF Transform (DTFT): Definition, Convergence, Spectra, Parseval's Theorem  |  Deller,  2:1-2, 2:3.1-2, 2:3.5; P&M, 4.2|  HW 4 due 3rd |
 | 3.7 |  __SPRING BREAK__ | |
-| 3.14 |   DTFT (continued): Frequency Response of LTI Systems, Relationship Between System Function and Freq. Resp., Ideal Filters |  Deller, 5:4.3; P&M, 4.4.2-3, 4.4.5 |  HW 5 |
-| 3.21 |  Discrete Fourier Transform (DFT): Definition, Properties, Applications | Deller, 2:5; P&M, 5.1-2 | HW 5 due 24th, HW 6 |
-| 3.28 |  Applications of DFT: Block Filtering, Frequency Analysis. Fast FT (In-class coding) | Deller, 2:6; P&M 5.3-4 | HW 6 due 31st, HW 7|
-| 4.4 | Machine Learning for Signal Processing: Supervised and Unsupervised Learning, Linear Algebra. | | __Midterm 2 on 4.5__, HW7 due 7th |
-| 4.11 |  MLSP: Linear Regression, Classifiers, Autocorrelation  |  |
-| 4.18 |  TBD |  |
+| 3.14 |  DTFT (continued): Relationship Between $z$-Transform (and CTFT) and DTFT, Frequency Response of LTI Systems|  Deller, 4:3, 5:4.1-2; P&M, 4.3-4  |  HW 5 |
+| 3.21 |  DTFT (continued): Frequency Response of LTI Systems, Relationship Between System Function and Freq. Resp., Ideal Filters |  Deller, 5:4.3; P&M, 4.4.2-3, 4.4.5 | HW 5 due 24th, HW 6 |
+| 3.28 |  Discrete Fourier Transform (DFT): Definition, Properties, Applications  | Deller, 2:5; P&M, 5.1-2 | HW 6 due 31st, HW 7|
+| 4.4 |  Applications of DFT: Block Filtering, Frequency Analysis. Fast FT (In-class coding) | Deller, 2:6; P&M 5.3-4 | __Midterm 2 on 4.7__, HW7 due 7th |
+| 4.11 | Machine Learning for Signal Processing: Supervised and Unsupervised Learning, Linear Algebra.  |  |
+| 4.18 | MLSP: Linear Regression, Classifiers, Autocorrelation |  |
 | 4.25 |  TBD |  |
 | 5.2 |  Final's Week |  |
