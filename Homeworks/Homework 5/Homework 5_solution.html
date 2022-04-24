@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Homework 5</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Homework 5_solution</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -13971,7 +13971,7 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="ECE-466-Homework-5">ECE 466 Homework 5<a class="anchor-link" href="#ECE-466-Homework-5">&#182;</a></h1><hr>
+<h1 id="ECE-466-Homework-5-Solution">ECE 466 Homework 5 Solution<a class="anchor-link" href="#ECE-466-Homework-5-Solution">&#182;</a></h1><hr>
 <p><strong>Spring 22</strong>
 <strong>Due 3/24/2022</strong></p>
 <ul>
@@ -13984,7 +13984,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Your Name: [Name Surname]</strong></p>
+<p><strong>Emre Sofuoglu</strong></p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14017,42 +14017,111 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Answer for 1.1:</strong></p>
-<hr>
+<p>See the figure below for the solution of one sided $z$-transform.</p>
+<h2><img src="hw5q1_1.png" alt="hw5q1_1"></h2>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your code for 1.1 should be written and executed in this cell.</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">zic</span> <span class="o">=</span> <span class="n">signal</span><span class="o">.</span><span class="n">lfiltic</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
+<span class="n">y</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">signal</span><span class="o">.</span><span class="n">lfilter</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">zi</span> <span class="o">=</span> <span class="n">zic</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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"
+>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Answer for 1.2:</strong></p>
-<hr>
+<p>See the figure below for the solution of one sided $z$-transform.</p>
+<h2><img src="hw5q1_2.png" alt="hw5q1_2"></h2>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your code for 1.2 should be written and executed in this cell.</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">**</span><span class="n">n</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">zic</span> <span class="o">=</span> <span class="n">signal</span><span class="o">.</span><span class="n">lfiltic</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
+<span class="n">y</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">signal</span><span class="o">.</span><span class="n">lfilter</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">zi</span><span class="o">=</span><span class="n">zic</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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"
+>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14073,6 +14142,15 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Answer for 2:</strong></p>
+<ol>
+<li><p>From the $z$ transform definition and the causality of $x[n]$: $X(z) = \sum_{n=0}^\infty x[n] z^{-n}$. Then, $\lim_{z\rightarrow \infty} \sum_{n=0}^\infty x[n] z^{-n}= \sum_{n=0}^\infty x[n] \lim_{z\rightarrow \infty}z^{-n} = x[0] z^{0}= x[0]$, as the value of any power, other than 0, of $z$ will be $0$.</p>
+</li>
+<li><p>From 1., if the sequence is causal, then the sequence needs to converge to a constant value when $z\rightarrow \infty$.</p>
+<p>a) $\lim_{z\rightarrow \infty} \frac{(z-0.5)^4}{(z-\frac{1}{3})^3} = \infty$. Thus, this $z$-transform cannot belong to a causal signal.</p>
+<p>b) $\lim_{z\rightarrow \infty}\frac{\left(1-\frac{1}{2}z^-1\right)^2}{\left(1-\frac{1}{3}z^-1\right)} = \lim_{z\rightarrow \infty}\frac{\left(z-\frac{1}{2}\right)^2}{\left(z^2-\frac{1}{3}z\right)} = 1$, so this might belong to a causal signal.</p>
+<p>c) $\lim_{z\rightarrow \infty}\frac{(z-\frac{1}{3})^2}{(z-\frac{1}{2})^3}=0$, so this might also belong to a causal signal.</p>
+</li>
+</ol>
 <hr>
 
 </div>
@@ -14092,6 +14170,7 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Answer for 3.1:</strong></p>
+<p>$X(z) = \frac{z}{z-2}, |z|&gt;2$. ROC does not include the unit circle, so the Fourier transform does not exist.</p>
 <hr>
 
 </div>
@@ -14099,6 +14178,8 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Answer for 3.2:</strong></p>
+<p>$X(z) = 1 + z^{-1} + z^{-2}+ z^{-3} + z^{-4}+ z^{-5},$ ROC is everywhere except $z=0$. ROC includes unit circle and thus, FT exist. In fact we can just replace $z$ with $e^{j\omega}$ to get FT.</p>
+<p>$X(\omega) = 1 + e^{-j\omega} + e^{-2j\omega}+ e^{-3j\omega} + e^{-4j\omega}+ e^{-5j\omega} $</p>
 <hr>
 
 </div>
@@ -14106,14 +14187,18 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Answer for 3.3:</strong></p>
-<hr>
+<p>From the $z$-transform table: $$X(z) = \frac{az^{-1}\sin(\omega_0)}{1-2az^{-1}cos(\omega_0)+a^2z^{-2}}, |z|&gt;|a|.$$</p>
+<p>Since $|a|&lt;1$, ROC includes the unit circle, hence, FT exists. We can again set $z=e^{j\omega}.$</p>
+$$X(\omega) = \frac{ae^{-j\omega}\sin(\omega_0)}{1-2ae^{-j\omega}cos(\omega_0)+a^2e^{-2j\omega}}.$$<hr>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Answer for 3.4:</strong></p>
-<hr>
+$$X(z) = -2z^{2}-z+z^{-1}+2z^{-2},$$<p></p>
+<p>ROC is everywhere except $z=0$, and $z=\infty$. Hence FT exists.</p>
+$$X(\omega) = -2e^{2j\omega}-e^{j\omega}+e^{-j\omega}+2e^{-2j\omega}$$<hr>
 
 </div>
 </div>
@@ -14130,21 +14215,14 @@ $$x[n] = \{ \dots ,1,0,1,2,\underline{3},2,1,0,1, \dots \} $$</p>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Answer for 4.1:</strong></p>
-<hr>
+<p><strong>Answer for 4:</strong></p>
+<h2><img src="hw5q4_1.png" alt="hw5q4_1"></h2>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Answer for 4.2:</strong></p>
-<hr>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="5:">5:<a class="anchor-link" href="#5:">&#182;</a></h4><p>[10 points] Determine the signal $x[n]$ if its Fourier transform is as given in the figure below: (There is no phase component, the frequency response does not contain any imaginary parts.)</p>
+<h4 id="5:">5:<a class="anchor-link" href="#5:">&#182;</a></h4><p>[10 points] Determine the signal $x[n]$ if its Fourier transform is as given in the figure below:</p>
 <p><img src="figure1.jpg" alt="Figure 1"></p>
 
 </div>
@@ -14152,6 +14230,7 @@ $$x[n] = \{ \dots ,1,0,1,2,\underline{3},2,1,0,1, \dots \} $$</p>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Answer for 5:</strong></p>
+<p><img src="hw5q5.png" alt="hw5q5"></p>
 <hr>
 
 </div>
@@ -14166,6 +14245,14 @@ $$x[n] = \{ \dots ,1,0,1,2,\underline{3},2,1,0,1, \dots \} $$</p>
 <li>Evaluate $\int_\pi^\pi X(\omega)\delta \omega.$</li>
 <li>Determine and sketch the signal whose Fourier transform is $Re\{X(\omega)\}.$ </li>
 </ol>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Answer for 6:</strong></p>
+<p><img src="hw5q6.png" alt="hw5q6"></p>
+<hr>
 
 </div>
 </div>
