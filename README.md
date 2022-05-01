@@ -1,5 +1,5 @@
-# ECE 466: Digital Signal Processing, Spring 2022
-Coursework for ECE 466: Digital Signal Processing, Spring 2022
+# ECE 466: Digital Signal Processing, Spring 2022, Michigan State University
+Coursework for ECE 466: Digital Signal Processing, Spring 2022, ECE MSU
 
 This project includes a comprehensive set of files for the course. You can find books, notes, homeworks, quizzes and projects in their respective folder. 
 
