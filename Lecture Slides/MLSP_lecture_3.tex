@@ -1,0 +1,92 @@
+\PassOptionsToPackage{subsection=false}{beamerouterthememiniframes}
+\documentclass[a4,xcolor=dvipsnames]{beamer}
+
+\mode<presentation> {
+\usetheme{Berlin}
+}
+
+\definecolor{newBlue}{HTML}{2d4457} % 2d4457 UBC Blue (primary)
+
+\usecolortheme[named=newBlue]{structure}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{mathtools}
+\usepackage[mathscr]{euscript}
+\usepackage{algpseudocode}
+\usepackage{epsfig}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usetikzlibrary{shapes.geometric, arrows.meta}
+
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes,arrows}
+
+
+\def\R{\mathbb{R}}
+
+\def\a{\mathbf{a}}
+\def\b{\mathbf{b}}
+\def\x{\mathbf{x}}
+\def\y{\mathbf{y}}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \endgroup
+}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\secname\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+
+\pgfdeclarelayer{bg}    % declare background layer
+\pgfsetlayers{bg,main}
+
+\title{MLSP: Lecture 3}
+\author{Seyyid Emre Sofuo\u{g}lu}
+
+\begin{document}
+
+\setlength{\leftmargini}{0.2cm}
+
+\begin{frame}
+    \maketitle
+\end{frame}
+\begin{frame}
+    \frametitle{Unsupervised Learning}
+    \begin{itemize}
+        \item Learning with no targets.
+        \item 
+    \end{itemize}
+\end{frame}
+
+\end{document}
