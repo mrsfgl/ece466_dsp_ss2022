@@ -1,0 +1,15 @@
+Project/disteu.m
+Project/test.m
+Project/train.m
+Project/lbg.gif
+*.aux
+*.nav
+*.log
+*.out
+*.fls
+*.snm
+*.toc
+*.gz
+*.fdb_latexmk
+*.synctex.gz
+*.pdf
